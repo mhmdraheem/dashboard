@@ -129,7 +129,7 @@ a {
     opacity: 0;
 }
 
-.container .search-bar .profile .notifications::after {
+.container .search-bar .search-bar-icons .notifications::after {
     content: "";
     position: absolute;
     width: 10px;

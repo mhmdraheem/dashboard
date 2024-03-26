@@ -129,7 +129,7 @@ a {
     opacity: 0;
 }
 
-.container .search-bar .profile .notifications::after {
+.container .search-bar .search-bar-icons .notifications::after {
     content: "";
     position: absolute;
     width: 10px;
@@ -169,9 +169,20 @@ a {
     bottom: -10px;
     left: 0;
 }
+
+.boxes {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .boxes {
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 10px;
+    }
+}
 /* end content */
 
-/* start profile */
+/* start site control */
 .boxes {
     display: flex;
     flex-wrap: wrap;
