@@ -267,15 +267,18 @@ a {
     flex-wrap: wrap;
 }
 
+.profile .details .profile-row .details > div {
+    width: 250px;
+}
+
 @media (max-width: 767px) {
     .profile .details .profile-row .details {
         justify-content: center;
     }
-}
 
-.profile .details .profile-row .details span,
-.profile .details .profile-row .details .toggle {
-    min-width: 250px;
+    .profile .details .profile-row .details > div {
+        width: 150px;
+    }
 }
 
 @media (max-width: 767px) {
