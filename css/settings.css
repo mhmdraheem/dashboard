@@ -1,0 +1,401 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--dim-blue-color);
+}
+
+*:focus {
+    outline: none;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* start side bar*/
+.sidebar {
+    min-height: 100vh;
+}
+
+.sidebar h2 {
+    margin: 0 auto 40px;
+}
+
+.sidebar h2::before,
+.sidebar h2::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sidebar h2::before {
+    width: calc(100% + 40px);
+    height: 1px;
+    bottom: -5px;
+}
+
+.sidebar h2::after {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: -10px;
+    outline: 5px solid white;
+}
+
+.sidebar li a i {
+    margin-right: 10px;
+}
+
+.sidebar li a.selected,
+.sidebar li a:hover {
+    background-color: #F6F6F6;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .sidebar h2 {
+        font-size: 13px;
+        margin: 0 auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .sidebar h2::before,
+    .sidebar h2::after {
+        display: none;
+    }
+}
+/* end sidebar */
+
+/* start search bar */
+.container .search-bar form::after {
+    content: "\f002";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    color: var(--grey-color);
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.container .search-bar form input {
+    width: 160px;
+    padding: 10px 0 10px 40px;
+    border: 1px solid #ccc;
+}
+
+.container .search-bar form input:focus {
+    width: 180px;
+}
+
+.container .search-bar form input:focus::placeholder {
+    opacity: 0;
+}
+
+.container .search-bar .profile .notifications::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    top: -8px;
+    right: -5px;
+}
+/* end search bar */
+
+/* start content */
+.container .content {
+    background-color: #F1F5F9;
+}
+
+.container .content h1 {
+    margin-bottom: 40px;
+}
+
+.container .content h1::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: white;
+    bottom: -10px;
+    left: 0;
+}
+
+.container .content h1::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+    bottom: -10px;
+    left: 0;
+}
+
+.boxes {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .boxes {
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 10px;
+    }
+}
+/* end content */
+
+/* start site control */
+.site-control .details textarea {
+    resize: none;
+    border-radius: 6px;
+    min-height: 150px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+} 
+/* end site control */
+
+/* start general info */
+.general-info .details input:disabled {
+    background-color: #f0f4f8;
+    cursor: not-allowed;
+    color: var(--grey-color)
+}
+
+.general-info .details input.email {
+    display: inline-block;
+    width: calc(100% - 80px);
+}
+
+.general-info .details input[type="submit"] {
+    border: none;
+    margin-left: 10px;
+    color: var(--blue-color);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+/* end general info */
+
+/* start security info */
+.security-info .details .security-row:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+/* end security info */
+
+/* start social info */
+.social-info .details .social-row {
+    width: 100%; 
+    color: var(--grey-color);
+    background-color: #F6F6F6;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.social-info .details .social-row:focus-within i {
+    color: black;
+}
+
+.social-info .details .social-row input {
+    flex: 1;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+    border-left: 1px solid #ccc;
+    margin-left: 40px;
+}
+
+.social-info .details .social-row i {
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    transition: var(--transition-time);
+}
+/* end social info */
+
+/* start widgets control */
+.widgets-control .details label {
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.widgets-control .details label > input {
+    cursor: pointer;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #eee;
+    border-radius: 3px;
+    position: relative;
+}
+
+.widgets-control .details label:hover > input,
+.widgets-control .details label > input:checked {
+    border-color: var(--blue-color);
+}
+
+.widgets-control .details label > input::before {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 800;
+    
+    width: 0;
+    height: 0;
+    color: white;
+    font-size: 13px;
+    background-color: var(--blue-color);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition-time);
+}
+
+.widgets-control .details label > input:checked::before {
+    transform: translate(-50%, -50%) rotate(360deg);
+    width: 100%;
+    height: 100%;
+}
+/* end widgets control */
+
+/* start backup manager */
+.backup-manager .details form.period {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.backup-manager .details .period label {
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.backup-manager .details .period label > input {
+    cursor: pointer;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--grey-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.backup-manager .details .period label > input:checked {
+    border-color: var(--blue-color);
+}
+
+.backup-manager .details .period label > input::before {
+    content: "";
+    
+    border-radius: 50%;
+    background-color: var(--blue-color);
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    height: 70%;
+    transform: translate(-50%, -50%) scale(0);
+    
+    transition: var(--transition-time);
+}
+
+.backup-manager .details .period label > input:checked::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.backup-manager .details .type {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.backup-manager .details .type label {
+    cursor: pointer;
+    flex: 1;
+}
+
+.backup-manager .details .type label > input {
+    cursor: pointer;
+    appearance: none;
+    display: none;
+}
+
+.backup-manager .details .type label .server {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 2px solid #ccc;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.backup-manager .details .type label .server i {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.backup-manager .details .type label > input:checked + .server  {
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+}
+/* end backup manager */

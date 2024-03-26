@@ -1,0 +1,486 @@
+:root {
+    --transition-time: 0.3s;
+
+    --blue-color: #0075ff;
+    --dim-blue-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+/* start box styling */
+.d-flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.d-grid {
+    display: grid;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-in-block {
+    display: inline-block;
+}
+/* end box styling */
+
+/* start padding and margins */
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-30 {
+    margin-right: 30px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-30 {
+    margin-left: 30px;
+}
+
+.ml-40 {
+    margin-left: 40px;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pr-20 {
+    padding-right: 20px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-20 {
+    padding-bottom: 20px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pl-15 {
+    padding-left: 15px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pl-30 {
+    padding-left: 30px;
+}
+/* end padding and margins */
+
+/* start colors */
+.c-white {
+    color: white;
+}
+
+.c-black {
+    color: black;
+}
+
+.c-grey {
+    color: var(--grey-color);
+}
+
+.c-blue {
+    color: var(--blue-color);
+}
+
+.c-green {
+    color: var(--green-color);
+}
+
+.c-orange {
+    color: var(--orange-color);
+}
+
+.c-red {
+    color: var(--red-color);
+}
+
+.c-red-hover:hover {
+    color: var(--red-color);
+}
+
+.bg-green {
+    background-color: var(--green-color);
+}
+
+.bg-light-green {
+    background-color: #D3F3DF;
+}
+
+.bg-orange {
+    background-color: var(--orange-color);
+}
+
+.bg-red {
+    background-color: var(--red-color);
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-light-orange {
+    background-color: #FDECCE;
+}
+
+.bg-blue {
+    background-color: var(--blue-color);
+}
+
+.bg-light-blue {
+    background-color: #CCE3FF;
+}
+
+.bg-eee {
+    background-color: #eee;
+}
+
+.bg-dim-blue-hover:hover {
+    background-color: var(--dim-blue-color);
+}
+/* end colors */
+
+/* start shadows */
+.shadow {
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 10%);
+}
+/* end shadows*/
+
+/* start position */
+.p-relative {
+    position: relative;
+}
+/* end position */
+
+/* start font */
+.fw-normal {
+    font-weight: normal;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.txt-c {
+    text-align: center;
+}
+/* end font */
+
+/* start border */
+.rad-5 {
+    border-radius: 5px;
+}
+
+.rad-10 {
+    border-radius: 10px;
+}
+
+.b-none {
+    border: none;
+}
+
+.border-1 {
+    border: 1px solid #ccc;
+}
+
+.border-t {
+    border-top: 1px solid #ccc;
+}
+
+.border-b {
+    border-bottom: 1px solid #eee;
+}
+/* end border */
+
+/* start transition */
+.transition {
+    transition: var(--transition-time);
+}
+/* end transition */
+
+/* start cursor */
+.cursor-p {
+    cursor: pointer;
+}
+/* end cursor */
+
+/* start component */
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar {
+    max-width: 100%;
+    border-radius: 50%;
+    outline: 5px solid white;
+}
+
+.avatar-30 {
+    width: 30px;
+    height: 30px;
+}
+
+.avatar-64 {
+    width: 64px;
+    height: 64px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+}
+
+.button {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(255 255 255 / 70%);
+}
+
+.toggle-checkbox {
+    appearance: none;
+    display: none;
+}
+
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.toggle-switch::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #aaa;
+    
+    position: absolute;
+    top: 4px;
+    left: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    transition: 0.3s;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: var(--blue-color);
+}
+
+.toggle-checkbox:checked + .toggle-switch::before {
+    content: "\f00c";
+    color: var(--blue-color);
+    left: 50px;
+}
+/* end component */
+
+/* start media */
+@media (max-width: 767px) {
+    .mobile-column {
+        flex-direction: column;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-gap-10 {
+        gap: 10px;
+    }
+
+    .mobile-txt-c {
+        text-align: center;
+    }
+}
+/* end media*/
