@@ -74,10 +74,6 @@ a {
     outline: 5px solid white;
 }
 
-.sidebar li a i {
-    margin-right: 10px;
-}
-
 .sidebar li a.selected,
 .sidebar li a:hover {
     background-color: #F6F6F6;
@@ -99,6 +95,10 @@ a {
     .sidebar h2::before,
     .sidebar h2::after {
         display: none;
+    }
+
+    .sidebar a {
+        justify-content: center;
     }
 }
 /* end sidebar */
