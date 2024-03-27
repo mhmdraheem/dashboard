@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+.align-start {
+    align-items: flex-start;
+}
+
 .justify-between {
     justify-content: space-between;
 }
@@ -84,6 +88,10 @@
     margin-top: 10px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -106,6 +114,14 @@
 
 .mr-30 {
     margin-right: 30px;
+}
+
+.mr-40 {
+    margin-right: 40px;
+}
+
+.mr-50 {
+    margin-right: 50px;
 }
 
 .mb-5 {
@@ -346,6 +362,14 @@
 
 .txt-c {
     text-align: center;
+}
+
+.txt-r {
+    text-align: right;
+}
+
+.txt-l {
+    text-align: left;
 }
 /* end font */
 
