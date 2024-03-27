@@ -169,6 +169,17 @@ a {
     bottom: -10px;
     left: 0;
 }
+
+.boxes {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .boxes {
+        grid-template-columns: minmax(200px, 1fr);
+        gap: 10px;
+    }
+}
 /* end content */
 
 /* start project */
@@ -185,7 +196,11 @@ a {
     border: 2px solid white;
 }
 
-.project .details .team img:not(:first-child) {
+.project .details .team a:hover {
+    z-index: 100;
+}
+
+.project .details .team a:not(:first-child) {
     margin-left: -20px;
 }
 
