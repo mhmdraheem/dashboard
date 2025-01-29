@@ -1,248 +1,254 @@
 ::-webkit-scrollbar {
-    width: 12px;
+  width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: white;
+  background-color: white;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--blue-color);
+  background-color: var(--blue-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--dim-blue-color);
+  background-color: var(--dim-blue-color);
 }
 
 :focus {
-    outline: none;
+  outline: none;
 }
 
 * {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /* start side bar*/
 .sidebar {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .sidebar h2 {
-    margin: 0 auto 40px;
+  margin: 0 auto 40px;
 }
 
 .sidebar h2::before,
 .sidebar h2::after {
-    content: "";
-    position: absolute;
-    background-color: black;
-    left: 50%;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  background-color: black;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .sidebar h2::before {
-    width: calc(100% + 40px);
-    height: 1px;
-    bottom: -5px;
+  width: calc(100% + 40px);
+  height: 1px;
+  bottom: -5px;
 }
 
 .sidebar h2::after {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    bottom: -10px;
-    outline: 5px solid white;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  bottom: -10px;
+  outline: 5px solid white;
 }
 
 .sidebar li a.selected,
 .sidebar li a:hover {
-    background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 
 @media (max-width: 767px) {
-    .sidebar {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
+  .sidebar {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    .sidebar h2 {
-        font-size: 13px;
-        margin: 0 auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  .sidebar h2 {
+    font-size: 13px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-    .sidebar h2::before,
-    .sidebar h2::after {
-        display: none;
-    }
+  .sidebar h2::before,
+  .sidebar h2::after {
+    display: none;
+  }
 
-    .sidebar a {
-        justify-content: center;
-    }
+  .sidebar a {
+    justify-content: center;
+  }
+}
+
+.sidebar-content {
+  position: sticky;
+  top: 0;
 }
 /* end sidebar */
 
 /* start search bar */
 .container .search-bar form::after {
-    content: "\f002";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 800;
-    color: var(--grey-color);
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
+  content: "\f002";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 800;
+  color: var(--grey-color);
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
 }
 
 .container .search-bar form input {
-    width: 160px;
-    padding: 10px 0 10px 40px;
-    border: 1px solid #ccc;
+  width: 160px;
+  padding: 10px 0 10px 40px;
+  border: 1px solid #ccc;
 }
 
 .container .search-bar form input:focus {
-    width: 180px;
+  width: 180px;
 }
 
 .container .search-bar form input:focus::placeholder {
-    opacity: 0;
+  opacity: 0;
 }
 
 .container .search-bar .search-bar-icons .notifications::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background-color: red;
-    border-radius: 50%;
-    top: -8px;
-    right: -5px;
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  top: -8px;
+  right: -5px;
 }
 /* end search bar */
 
 /* start content */
 .container .content {
-    background-color: #F1F5F9;
+  background-color: #f1f5f9;
 }
 
 .container .content h1 {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .container .content h1::before {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 3px;
-    background-color: white;
-    bottom: -10px;
-    left: 0;
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  background-color: white;
+  bottom: -10px;
+  left: 0;
 }
 
 .container .content h1::after {
-    content: "";
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    background-color: black;
-    bottom: -10px;
-    left: 0;
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background-color: black;
+  bottom: -10px;
+  left: 0;
 }
 
 .boxes {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
 @media (max-width: 767px) {
-    .boxes {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 10px;
-    }
+  .boxes {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
 }
 /* end content */
 
 .files {
-    align-items: flex-start;
+  align-items: flex-start;
 }
 
 @media (max-width: 767px) {
-    .files {
-        flex-direction: column-reverse;
-        align-items: stretch;
-    }
+  .files {
+    flex-direction: column-reverse;
+    align-items: stretch;
+  }
 }
 
 .files .boxes .file i {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
 }
 
 .files .boxes .file:hover img {
-    transform: rotate(5deg);
+  transform: rotate(5deg);
 }
 
 .files .boxes .file img {
-    width: 64px;
-    transition: var(--transition-time);
+  width: 64px;
+  transition: var(--transition-time);
 }
 
 .files .stats .details .row i.blue {
-    background-color: rgb(0 117 255 / 30%);
+  background-color: rgb(0 117 255 / 30%);
 }
 
 .files .stats .details .row i.green {
-    background-color: rgb(34, 197, 94, 30%);
+  background-color: rgb(34, 197, 94, 30%);
 }
 
 .files .stats .details .row i.red {
-    background-color: rgb(244, 67, 54, 30%);
+  background-color: rgb(244, 67, 54, 30%);
 }
 
 .files .stats .details .row i.orange {
-    background-color: rgb(245, 158, 11, 30%);
+  background-color: rgb(245, 158, 11, 30%);
 }
 
 .files .stats .details a {
-    padding: 10px 15px;
-    border-radius: 5px;;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .files .stats .details a:hover {
-    background-color: var(--dim-blue-color);
+  background-color: var(--dim-blue-color);
 }
 
 .files .stats .details a:hover i {
-    animation: up 0.7s infinite;
+  animation: up 0.7s infinite;
 }
 
 @keyframes up {
-    0%, 100% {
-        transform: translateY(0);
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
 
-    50% {
-        transform: translateY(-3px);
-    }
+  50% {
+    transform: translateY(-3px);
+  }
 }
