@@ -195,7 +195,7 @@ h1.header {
 @media (max-width: 767px) {
   .boxes {
     grid-template-columns: minmax(200px, 1fr);
-    gap: 10px;
+    gap: 20px;
   }
 }
 /* end content */
@@ -207,7 +207,6 @@ h1.header {
 }
 
 .project .details .team img {
-  margin-top: 40px;
   width: 40px;
   height: 40px;
   border-radius: 50%;
