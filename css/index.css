@@ -45,6 +45,11 @@ a {
 h2.title {
   font-size: 18px;
 }
+
+h1.header {
+  font-size: 25px;
+}
+
 /* start side bar*/
 .sidebar {
   min-height: 100vh;
