@@ -237,8 +237,15 @@ a {
 
 /* start targets section */
 .targets .details .details-icon {
-  width: 75px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 767px) {
+  .targets .details .details-icon {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .targets .details .progress-bar,
@@ -466,8 +473,8 @@ a {
 }
 
 .social-links .details .social .media i {
-  width: 50px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
 }
 
 .social-links .details .social .media i:hover {
@@ -544,8 +551,8 @@ a {
 }
 
 .projects .details table tbody td {
-  font-size: 16px;
-  padding: 20px 10px;
+  font-size: 14px;
+  padding: 5px;
 }
 
 .projects .details table tbody td.team img {
