@@ -234,7 +234,7 @@ h1.header {
 }
 
 .project .details .footer .progress {
-  height: 8px;
+  height: 5px;
   width: 200px;
   border-radius: 4px;
 }
