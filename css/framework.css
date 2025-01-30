@@ -63,6 +63,101 @@
 }
 /* end box styling */
 
+/* start component */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  max-width: 100%;
+  border-radius: 50%;
+  outline: 5px solid white;
+}
+
+.avatar-30 {
+  width: 30px;
+  height: 30px;
+}
+
+.avatar-64 {
+  width: 64px;
+  height: 64px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+}
+
+.button {
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+}
+
+.overlay::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255 255 255 / 70%);
+}
+
+.toggle-checkbox {
+  appearance: none;
+  display: none;
+}
+
+.toggle-switch {
+  background-color: #ccc;
+  width: 40px;
+  height: 20px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.toggle-switch::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00d";
+  font-weight: 900;
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  color: #aaa;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  font-size: 12px;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background-color: var(--blue-color);
+}
+
+.toggle-checkbox:checked + .toggle-switch::before {
+  content: "\f00c";
+  color: var(--blue-color);
+  left: 22px;
+}
+/* end component */
+
 /* start padding and margins */
 .w-full {
   width: 100%;
@@ -418,101 +513,6 @@
   cursor: pointer;
 }
 /* end cursor */
-
-/* start component */
-.between-flex {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.center-flex {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.avatar {
-  max-width: 100%;
-  border-radius: 50%;
-  outline: 5px solid white;
-}
-
-.avatar-30 {
-  width: 30px;
-  height: 30px;
-}
-
-.avatar-64 {
-  width: 64px;
-  height: 64px;
-}
-
-.box {
-  background-color: white;
-  border-radius: 10px;
-}
-
-.button {
-  border: none;
-  padding: 5px 8px;
-  border-radius: 6px;
-}
-
-.overlay::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgb(255 255 255 / 70%);
-}
-
-.toggle-checkbox {
-  appearance: none;
-  display: none;
-}
-
-.toggle-switch {
-  background-color: #ccc;
-  width: 40px;
-  height: 20px;
-  border-radius: 16px;
-  position: relative;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.toggle-switch::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f00d";
-  font-weight: 900;
-  background-color: white;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  color: #aaa;
-  position: absolute;
-  top: 2px;
-  left: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-  font-size: 12px;
-}
-
-.toggle-checkbox:checked + .toggle-switch {
-  background-color: var(--blue-color);
-}
-
-.toggle-checkbox:checked + .toggle-switch::before {
-  content: "\f00c";
-  color: var(--blue-color);
-  left: 22px;
-}
-/* end component */
 
 /* start media */
 @media (max-width: 767px) {
