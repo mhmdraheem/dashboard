@@ -89,7 +89,7 @@ h1.header {
 
 .sidebar li a.selected,
 .sidebar li a:hover {
-  background-color: #f6f6f6;
+  background-color: #dbdada;
 }
 
 @media (max-width: 767px) {
