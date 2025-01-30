@@ -227,7 +227,7 @@ h1.header {
   }
 
   .project .details .skills li > span {
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
   }
 }

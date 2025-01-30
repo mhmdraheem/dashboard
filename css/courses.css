@@ -194,7 +194,7 @@ h1.header {
 @media (max-width: 767px) {
   .boxes {
     grid-template-columns: minmax(200px, 1fr);
-    gap: 10px;
+    gap: 20px;
   }
 }
 /* end content */
